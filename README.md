@@ -15,15 +15,21 @@ DataFeed System processes a local XML file placed in root directory (`./public/f
 
 4. Ensure that the .env file is properly configured with your database connection details, including the database driver, host port, database name, username, and password.
 
-5. Run the following necessary database migrations commands:
-   ```php bin/console doctrine:database:create
-   ```
 
-   ```php bin/console make:migration
-   ```
 
-   ```php bin/console doctrine:migrations:migrate
-   ```
+### 5. Run the following necessary database migrations commands:
+
+1. install dependencies
+```bash
+php bin/console doctrine:database:create
+```
+```bash
+php bin/console make:migration
+```
+```bash
+php bin/console doctrine:migrations:migrate
+```
+ 
 ## Usage
 
 1. To import the XML file and execute the application, run the mention command in the console: "php bin/console app:xml-import"
