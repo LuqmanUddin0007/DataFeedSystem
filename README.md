@@ -19,7 +19,6 @@ DataFeed System processes a local XML file placed in root directory (`./public/f
 
 ### 5. Run the following necessary database migrations commands:
 
-1. install dependencies
 ```bash
 php bin/console doctrine:database:create
 ```
